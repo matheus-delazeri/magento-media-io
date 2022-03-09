@@ -73,7 +73,7 @@ class FileHandler
 
     public function loadFile()
     {
-        $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = PHPExcel_IOFactory::createReader('CSV');
         $objReader->setReadDataOnly(true);
         $this->objPHPExcel = $objReader->load($this->filePath);
         $this->objWorksheet = $this->objPHPExcel->getActiveSheet();

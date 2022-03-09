@@ -17,7 +17,7 @@ class MD_MediaIO_Helper_Data extends Mage_Core_Helper_Abstract
         define('TEMP', Mage::getBaseDir() . '/var/tmp/mediaio/');
         define('TEMP_CONFIG', TEMP . 'config.json');
 
-        define('VALID_EXTENSIONS', 'xlsx;csv');
+        define('VALID_EXTENSIONS', 'csv');
         define('VALUES_SEPARATOR', ';');
         define('ROWS_PER_TIME', 100);
     }
