@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<MD_MediaIO>
+			<active>true</active>
+			<codePool>community</codePool>
+		</MD_MediaIO>
+	</modules>
+</config>

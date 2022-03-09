@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <MD_MediaIO>
+        <version>1.0.0</version>
+        </MD_MediaIO>
+    </modules>
+    <global>
+        <helpers>
+            <mediaio>
+                <class>MD_MediaIO_Helper</class>
+            </mediaio>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <mediaio>
+            <use>admin</use>
+                <args>
+                    <module>MD_MediaIO</module>
+                    <frontName>mediaio</frontName>
+                </args>
+            </mediaio>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <mediaio>
+                    <file>mediaio.xml</file>
+                </mediaio>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

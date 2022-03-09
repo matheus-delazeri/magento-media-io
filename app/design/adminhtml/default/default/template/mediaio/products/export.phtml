@@ -1,0 +1,114 @@
+<?php
+$title = 'Export Images';
+$description = 'In this section you can export product images to a .XLSX file';
+$linkToTutorial = '';
+
+?>
+<script type="text/javascript">
+    function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+    const startUrl = '<?php echo Mage::getUrl('mediaio/adminhtml_media_export/export'); ?>'
+    const templatesUrl = '<?php echo Mage::getUrl('mediaio/adminhtml_templates/set'); ?>'
+    const loaderGifUrl = '<?php echo $this->getSkinUrl('images/ajax-loader-tr.gif') ?>'
+    const formKey = '<?php echo Mage::getSingleton('core/session')->getFormKey(); ?>'
+    const templatePath = '<?php echo TEMPLATES_PRODUCTS_EXPORT; ?>'
+    loadTemplates()
+</script>
+
+<?php
+include(__DIR__ . '/../components/contentHeader.phtml');
+include(__DIR__ . '/../components/mainContainer.phtml');
+?>
+<form id='form-export' method='post'>
+    <div class='templates-section'>
+        <select name='template' id='template'></select>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <?php
+    Mage::helper('mediaio')->displayStoreCategories();
+    ?>
+    <input type='hidden' name='form_key' id='form-key'>
+    <button class='scalable' id='export'><?php echo $title; ?></button>
+    <br>
+</form>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style type="text/css">
+    #idIframe {
+        width: 100%;
+        border: none;
+    }
+
+    #idIframe2 {
+        width: 100%;
+        border: none;
+    }
+
+    .help-modal {
+        margin-top: 10px;
+    }
+
+    .help-modal .help-modal-message {
+        padding: 10px 15px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid #eee;
+        font-size: 13px;
+    }
+
+    #import,
+    #export {
+        display: block !important;
+    }
+
+    .help-modal .help-modal-message i {
+        color: #3580c3;
+        margin-right: 10px;
+    }
+
+    .help-modal .help-modal-message:hover {
+        color: #00b7ff
+    }
+
+    body {
+        background-color: transparent;
+    }
+
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    .table-title {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .attr-table {
+        width: fit-content;
+        background: #f2f2f2;
+    }
+
+    .products-attr {
+        color: #888888;
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+        font-family: 'Roboto';
+    }
+    
+</style>

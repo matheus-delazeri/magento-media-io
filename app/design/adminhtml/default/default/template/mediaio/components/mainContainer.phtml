@@ -1,0 +1,31 @@
+<div id="page:main-container">
+    <div class="columns container">
+        <div class="row">
+            <div class="container">
+                <div class="entry-edit">
+                    <div class="col-main-title">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 conf-title" style="padding-right:0;">
+                                    <i class="fa fa-th-large"></i>
+                                    <h3><?php echo $title;?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="entry-edit">
+                        <div class="section-config active">
+                            <div class="entry-edit-head collapseable">
+                                <a id="geral_informacoes-head" href="#" onclick="Fieldset.toggleCollapse('geral_informacoes', '#'); return false;" class="open"><?php echo $title;?></a>
+                            </div>
+
+                            <div class="entry-edit">
+                                <fieldset class="config collapseable" id="geral_informacoes">
+                                    <legend><?php echo $title;?></legend>
+                                    <div class="col-sm-4">
+                                        <h4 class="description-title"><?php echo $title;?></h4>
+                                        <p class="description-text"><?php echo $description;?></p>
+                                    </div>
+                                    <div class="col-sm-8 col-fields">
+                                        <div class="table-responsive">

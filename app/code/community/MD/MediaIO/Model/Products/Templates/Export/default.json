@@ -1,0 +1,32 @@
+{
+    "name": "Default",
+    "attributes": {
+        "sku": "SKU"
+    },
+    "extras": {
+        "image": {
+            "attributes": {
+                "image" : "Image"
+            },
+            "function": "getImage"
+        },
+        "small_image": {
+            "attributes": {
+                "small_image" : "Small Image"
+            },
+            "function": "getSmallImage"
+        },
+        "thumbnail": {
+            "attributes": {
+                "thumbnail" : "Thumbnail"
+            },
+            "function": "getThumbnail"
+        },
+        "gallery": {
+            "attributes": {
+                "media_gallery" : "Media Gallery"
+            }, 
+            "function": "getMediaGallery"
+        }
+    }
+}
